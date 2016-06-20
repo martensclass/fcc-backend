@@ -29,7 +29,5 @@ app.get('/:id', function (req, res) {
  
 });
 
-app.listen(8080, function () {
-    console.log('Listening on port 8080...');
-});
+app.listen(process.env.PORT || 5000);
 
